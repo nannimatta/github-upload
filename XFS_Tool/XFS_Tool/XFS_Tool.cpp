@@ -6,6 +6,8 @@
 #include "xfsData.h"
 
 #define MAX_LOADSTRING 100
+#define SUCCESS        0
+#define FAILED         1
 
 // Global Variables:
 HINSTANCE hInst;                                // current instance
@@ -132,6 +134,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             // Parse the menu selections:
             switch (wmId)
             {
+            case IDM_STARTUP:
+                if (StartUp_Subsytem() == SUCCESS) {
+                    DestroyWindow(hWnd);
+                }
+                break;
             case IDM_ABOUT:
                 DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
                 break;

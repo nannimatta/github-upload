@@ -1,2 +1,4 @@
 ﻿  XFS_Tool.cpp
-  XFS_Tool.vcxproj -> C:\Users\matt\source\Repos\XFS_Tool\Debug\XFS_Tool.exe
+C:\Users\matt\Documents\GitHub\github-upload\XFS_Tool\XFS_Tool\XFS_Tool.cpp(10,1): warning C4005: 'FAILED': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\winerror.h(28794): message : see previous definition of 'FAILED'
+  XFS_Tool.vcxproj -> C:\Users\matt\Documents\GitHub\github-upload\XFS_Tool\Debug\XFS_Tool.exe
